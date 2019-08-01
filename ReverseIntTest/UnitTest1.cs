@@ -17,7 +17,7 @@ namespace ReverseIntTest
         }
         public void TestMethod3()
         {
-            Assert.AreEqual(12112, Program.ReverseInt(21121));
+            Assert.AreEqual(-12112, Program.ReverseInt(-21121));
         }
         public void TestMethod4()
         {
