@@ -8,10 +8,14 @@ namespace SortingArrays
         static void Main(string[] args)
         {
             Console.WriteLine("Sorting array of random integers");
-            int[] arr = Arrays.RandIntArray(10, 10);
+            Arrays arr = new Arrays(10, 5);
+            foreach (int i in arr.GetArray())
+            {
+                Console.Write($"{i} ");
+            }
             Console.WriteLine("");
-            Arrays.BubbleSort(arr);
-            foreach (int i in arr)
+            arr.BubbleSort();
+            foreach (int i in arr.GetArray())
             {
                 Console.Write($"{i} ");
             }

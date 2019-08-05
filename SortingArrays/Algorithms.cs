@@ -5,20 +5,26 @@ using System.Text;
 namespace SortingAlgorithms
 {
     class Arrays
-    {
-        public static int[] RandIntArray(int n, int rand)
+    { 
+        int[] arr;
+        public Arrays(int length = 10, int range = 10)
+        {
+            arr = RandIntArray(length, range);
+        }
+        public int[] GetArray() { return arr; }
+        //Generates a random array of a defined size with defined random integers
+        public int[] RandIntArray(int n, int rand)
         {
             Random r = new Random();
-            int[] arr = new int[n];
+            int[] ar = new int[n];
 
-            for (int i = 0; i < arr.Length; i++)
+            for (int i = 0; i < ar.Length; i++)
             {
-                arr[i] = r.Next(0, rand);
-                Console.Write($"{arr[i]} ");
+                ar[i] = r.Next(0, rand);
             }
-            return arr;
+            return ar;
         }
-        public static int[] BubbleSort(int[] arr)
+        public int[] BubbleSort()
         {
             for (int i = 0; i < arr.Length - 1; i++)
             {
