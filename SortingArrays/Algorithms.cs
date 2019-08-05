@@ -7,10 +7,12 @@ namespace SortingAlgorithms
     class Arrays
     { 
         int[] arr;
+        //sets an array (with default parameters)
         public Arrays(int length = 10, int range = 10)
         {
             arr = RandIntArray(length, range);
         }
+        //returns the array
         public int[] GetArray() { return arr; }
         //Generates a random array of a defined size with defined random integers
         public int[] RandIntArray(int n, int rand)
@@ -24,6 +26,7 @@ namespace SortingAlgorithms
             }
             return ar;
         }
+        //bubble sort
         public int[] BubbleSort()
         {
             for (int i = 0; i < arr.Length - 1; i++)
@@ -32,13 +35,50 @@ namespace SortingAlgorithms
                 {
                     if (arr[j] > arr[j + 1])
                     {
-                        arr[j] += arr[j + 1];
-                        arr[j + 1] = arr[j] - arr[j + 1];
-                        arr[j] -= arr[j + 1];
+                        Swap(arr, j, j + 1);
                     }
                 }
             }
             return arr;
+        }
+        //heap sort
+        public int[] HeapSort()
+        {
+            for (int i = (arr.Length -1) / 2; i >= 0; i--)
+            {
+                Heapify(arr, arr.Length, i);
+            }
+            for (int i = arr.Length - 1; i > 0; i--)
+            {
+                Swap(arr, i, 0);
+                Heapify(arr, i, 0);
+            }
+            return arr;
+        }
+        void Heapify(int[] a, int n, int i)
+        {
+            int root;
+            int left = (i + 1) * 2 - 1;
+            int right = (i + 1) * 2;
+            root = left < n && a[left] > a[i] ? left : i;
+
+            if(right < n && a[right] > a[root])
+            {
+                root = right;
+            }
+            if (root != i)
+            {
+                Swap(a, i, root);
+                Heapify(a, n, root);
+            }
+        }
+        //helper funtions
+        int[] Swap(int[] array, int a, int b)
+        {
+            array[a] += array[b];
+            array[b] = array[a] - arr[b];
+            array[a] -= array[b];
+            return array;
         }
     }
 }
