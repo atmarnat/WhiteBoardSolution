@@ -14,7 +14,7 @@ namespace SortingArrays
                 Console.Write($"{i} ");
             }
             Console.WriteLine("");
-            arr.HeapSort();
+            arr.InsertionSort();
             foreach (int i in arr.GetArray())
             {
                 Console.Write($"{i} ");

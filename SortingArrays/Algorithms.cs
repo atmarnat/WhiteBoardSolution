@@ -72,6 +72,22 @@ namespace SortingAlgorithms
                 Heapify(a, n, root);
             }
         }
+        //Insertion Sort
+        public int[] InsertionSort()
+        {
+            int i = 1;
+            while (i < arr.Length)
+            {
+                int j = i;
+                while (j > 0 && arr[j - 1] > arr[j])
+                {
+                    Swap(arr, j, j - 1);
+                    j--;
+                }
+                i++;
+            }
+            return arr;
+        }
         //helper funtions
         int[] Swap(int[] array, int a, int b)
         {
