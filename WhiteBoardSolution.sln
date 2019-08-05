@@ -27,13 +27,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JulianDayTest", "JulianDayT
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CamelCase", "CamelCase\CamelCase.csproj", "{FB43CEB7-E1A5-4AFE-9FB3-4E556A5F94E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MirrorString", "MirrorString\MirrorString.csproj", "{1E5C3D6F-303C-46A8-B85E-E6E2BCC882EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MirrorString", "MirrorString\MirrorString.csproj", "{1E5C3D6F-303C-46A8-B85E-E6E2BCC882EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlipNumbers", "FlipNumbers\FlipNumbers.csproj", "{E51AD9FF-AA34-461B-A368-B493561AC810}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlipNumbers", "FlipNumbers\FlipNumbers.csproj", "{E51AD9FF-AA34-461B-A368-B493561AC810}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseInt", "ReverseInt\ReverseInt.csproj", "{EA9E0CDB-EF68-45A2-ACC3-7291CB08B323}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReverseInt", "ReverseInt\ReverseInt.csproj", "{EA9E0CDB-EF68-45A2-ACC3-7291CB08B323}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseIntTest", "ReverseIntTest\ReverseIntTest.csproj", "{93FD6BEF-BAF0-4E3B-BB3E-C8A294DF8710}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReverseIntTest", "ReverseIntTest\ReverseIntTest.csproj", "{93FD6BEF-BAF0-4E3B-BB3E-C8A294DF8710}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingArrays", "SortingArrays\SortingArrays.csproj", "{091A6470-0319-4D8C-B259-B1DFEA8A7F2B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +107,10 @@ Global
 		{93FD6BEF-BAF0-4E3B-BB3E-C8A294DF8710}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93FD6BEF-BAF0-4E3B-BB3E-C8A294DF8710}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93FD6BEF-BAF0-4E3B-BB3E-C8A294DF8710}.Release|Any CPU.Build.0 = Release|Any CPU
+		{091A6470-0319-4D8C-B259-B1DFEA8A7F2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{091A6470-0319-4D8C-B259-B1DFEA8A7F2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{091A6470-0319-4D8C-B259-B1DFEA8A7F2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{091A6470-0319-4D8C-B259-B1DFEA8A7F2B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
