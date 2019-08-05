@@ -88,6 +88,36 @@ namespace SortingAlgorithms
             }
             return arr;
         }
+        //quicksort
+        public int[] QuickSort()
+        {
+            return DoQuick(arr, arr[0], arr[arr.Length - 1]);
+        }
+        int[] DoQuick(int[] a, int low, int high)
+        {
+            if (low < high)
+            {
+                int p = Partition(a, low, high);
+                DoQuick(a, low, p - 1);
+                DoQuick(a, p + 1, high);
+            }
+            return a;
+        }
+        int Partition(int[] a, int low, int high)
+        {
+            int p = a[high];
+            int i = low;
+            for (int j = low; j < high-1; j++)
+            {
+                if (a[j] < p)
+                {
+                    Swap(a, a[i], a[j]);
+                    i++;
+                }
+            }
+            Swap(a, a[i], a[high]);
+            return i;
+        }
         //helper funtions
         int[] Swap(int[] array, int a, int b)
         {
