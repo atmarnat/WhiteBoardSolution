@@ -91,7 +91,7 @@ namespace SortingAlgorithms
         //quicksort
         public int[] QuickSort()
         {
-            return DoQuick(arr, arr[0], arr[arr.Length - 1]);
+            return DoQuick(arr, 0, arr.Length - 1);
         }
         int[] DoQuick(int[] a, int low, int high)
         {
@@ -106,17 +106,17 @@ namespace SortingAlgorithms
         int Partition(int[] a, int low, int high)
         {
             int p = a[high];
-            int i = low;
-            for (int j = low; j < high-1; j++)
+            int i = low-1;
+            for (int j = low; j <= high-1; j++)
             {
                 if (a[j] < p)
                 {
-                    Swap(a, a[i], a[j]);
                     i++;
+                    Swap(a, a[i], a[j]);
                 }
             }
-            Swap(a, a[i], a[high]);
-            return i;
+            Swap(a, a[i+1], a[high]);
+            return i+1;
         }
         //helper funtions
         int[] Swap(int[] array, int a, int b)
