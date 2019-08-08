@@ -32,16 +32,12 @@ namespace CountDistinct
             int count = 0;
             for (int i = 0; i < arr.Length; i++)
             {
-                bool same = false;
+                bool same = true;
                 for (int j = 0; j < i; j++)
                 {
-                    if (arr[i] == arr[j])
-                    {
-                        same = true;
-                        break;
-                    }
+                    if (arr[i] == arr[j]) same = false;
                 }
-                if (!same) count++;
+                if (same) count++;
             }
             return count;
         }
