@@ -91,32 +91,32 @@ namespace SortingAlgorithms
         //quicksort
         public int[] QuickSort()
         {
-            return DoQuick(arr, 0, arr.Length - 1);
+            return QuickSort(arr, 0, arr.Length - 1);
         }
-        int[] DoQuick(int[] a, int low, int high)
+        int[] QuickSort(int[] a, int low, int high)
         {
             if (low < high)
             {
                 int p = Partition(a, low, high);
-                DoQuick(a, low, p - 1);
-                DoQuick(a, p + 1, high);
+                QuickSort(a, low, p - 1);
+                QuickSort(a, p + 1, high);
             }
             return a;
         }
         int Partition(int[] a, int low, int high)
         {
             int p = a[high];
-            int i = low-1;
-            for (int j = low; j <= high-1; j++)
+            int i = low;
+            for (int j = low; j < high-1; j++)
             {
                 if (a[j] < p)
                 {
-                    i++;
                     Swap(a, a[i], a[j]);
+                    i++;
                 }
             }
-            Swap(a, a[i+1], a[high]);
-            return i+1;
+            Swap(a, a[i], a[high]);
+            return i;
         }
         //helper funtions
         int[] Swap(int[] array, int a, int b)
