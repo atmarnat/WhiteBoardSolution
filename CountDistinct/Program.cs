@@ -10,6 +10,9 @@ namespace CountDistinct
             int[] arrr = new int[] { 1, 1, 2, 3, 4};
             int[] arrrr = new int[] { 1, 1, 1, 1, 1};
             int[] array = new int[0];
+            Console.WriteLine(CountDistinctElements(arr));
+            Console.WriteLine(CountDistinctElements(arrr));
+            Console.WriteLine(CountDistinctElements(arrrr));
             Console.WriteLine(CountDistinctElements(array));
         }
 
