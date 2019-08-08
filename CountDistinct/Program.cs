@@ -10,10 +10,10 @@ namespace CountDistinct
             int[] arrr = new int[] { 1, 1, 2, 3, 4};
             int[] arrrr = new int[] { 1, 1, 1, 1, 1};
             int[] array = new int[0];
-            Console.WriteLine(CountDistinctElements(arr));
-            Console.WriteLine(CountDistinctElements(arrr));
-            Console.WriteLine(CountDistinctElements(arrrr));
-            Console.WriteLine(CountDistinctElements(array));
+            Console.WriteLine(CountDistinct2(arr));
+            Console.WriteLine(CountDistinct2(arrr));
+            Console.WriteLine(CountDistinct2(arrrr));
+            Console.WriteLine(CountDistinct2(array));
         }
 
         public static int CountDistinctElements(int[] arr)
@@ -23,10 +23,25 @@ namespace CountDistinct
             int count = 1 ;
             for (int i = 0; i < arr.Length-1; i++)
             {
-                if (arr[i] != arr[i + 1])
+                if (arr[i] != arr[i + 1]) count++;
+            }
+            return count;
+        }
+        public static int CountDistinct2(int[] arr)
+        {
+            int count = 0;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                int same = 0;
+                for (int j = 0; j < i; j++)
                 {
-                    count++;
+                    if (arr[i] == arr[j])
+                    {
+                        same = 1;
+                        break;
+                    }
                 }
+                if (same == 0) count++;
             }
             return count;
         }
