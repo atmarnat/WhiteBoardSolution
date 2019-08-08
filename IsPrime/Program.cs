@@ -28,9 +28,7 @@ namespace IsPrime
         public static bool IsPrimeFaster(int n)
         {
             if (n < 2) return false;
-            if (n < 4) return true;
-            if (n % 2 == 0 || n % 3 == 0) return false;
-            for (int i = 3; i < n; i += 2)
+            for (int i = 2; i <= Math.Sqrt(n); i ++)
             {
                 if (n % i == 0) return false;
             }
