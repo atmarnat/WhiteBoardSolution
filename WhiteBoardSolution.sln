@@ -41,6 +41,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountDistinct", "CountDisti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountDistinctTest", "CountDistinctTest\CountDistinctTest.csproj", "{BE0AF301-F537-497D-B069-96C3C59A992D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsPrime", "IsPrime\IsPrime.csproj", "{7CA5B94A-1FCD-40B7-9E94-A4B8125864D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsPrimeTest", "IsPrimeTest\IsPrimeTest.csproj", "{1A49DC59-7AB6-442D-B4A6-9931E381F081}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +127,14 @@ Global
 		{BE0AF301-F537-497D-B069-96C3C59A992D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE0AF301-F537-497D-B069-96C3C59A992D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE0AF301-F537-497D-B069-96C3C59A992D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CA5B94A-1FCD-40B7-9E94-A4B8125864D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CA5B94A-1FCD-40B7-9E94-A4B8125864D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CA5B94A-1FCD-40B7-9E94-A4B8125864D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CA5B94A-1FCD-40B7-9E94-A4B8125864D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A49DC59-7AB6-442D-B4A6-9931E381F081}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A49DC59-7AB6-442D-B4A6-9931E381F081}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A49DC59-7AB6-442D-B4A6-9931E381F081}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A49DC59-7AB6-442D-B4A6-9931E381F081}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
