@@ -7,8 +7,10 @@ namespace CountLetters
     {
         public static int NumLetters(string str)
         {
-            int count = 0;
-            string s = "";
+            if (str == null || str == "") return 0;
+
+            var count = 0;
+            var s = "";
 
             Regex r = new Regex("[A-Za-z]");
             Regex rSpace = new Regex("[^ ]");
@@ -16,7 +18,7 @@ namespace CountLetters
             for(int i = 0; i < str.Length; i++)
             {
                 s += str[i];
-                if (rSpace.IsMatch(s))
+                if (r.IsMatch(s))
                 {
                     count++;
                 }
@@ -27,6 +29,7 @@ namespace CountLetters
         }
         static void Main(string[] args)
         {
+            Console.WriteLine(NumLetters(null));
             Console.WriteLine(NumLetters(" "));
             Console.WriteLine(NumLetters("*$*$*"));
             Console.WriteLine(NumLetters("cat"));
