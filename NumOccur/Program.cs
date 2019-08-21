@@ -18,7 +18,7 @@ namespace NumOccurrences
 
             return count;
         }
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Counting number of occurences");
 

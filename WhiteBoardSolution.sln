@@ -51,9 +51,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CountLettersTest", "CountLe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediaPlayers", "MediaPlayers\MediaPlayers.csproj", "{91C0F6A4-180B-49D2-B379-AB16184FE749}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumOccur", "NumOccur\NumOccur.csproj", "{8B64051C-8E02-4B96-B747-62CC8E0179E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NumOccur", "NumOccur\NumOccur.csproj", "{8B64051C-8E02-4B96-B747-62CC8E0179E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumOccurTest", "NumOccurTest\NumOccurTest.csproj", "{CA31ABAD-1805-428E-8C5A-3DF8B9E61821}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NumOccurTest", "NumOccurTest\NumOccurTest.csproj", "{CA31ABAD-1805-428E-8C5A-3DF8B9E61821}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharCount", "CharCount\CharCount.csproj", "{35553CEE-177B-4359-AEDE-5B9962B34577}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -165,6 +167,10 @@ Global
 		{CA31ABAD-1805-428E-8C5A-3DF8B9E61821}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA31ABAD-1805-428E-8C5A-3DF8B9E61821}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA31ABAD-1805-428E-8C5A-3DF8B9E61821}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35553CEE-177B-4359-AEDE-5B9962B34577}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35553CEE-177B-4359-AEDE-5B9962B34577}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35553CEE-177B-4359-AEDE-5B9962B34577}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35553CEE-177B-4359-AEDE-5B9962B34577}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
