@@ -18,7 +18,6 @@ namespace AlphabatizeString
                         char temp = letters[j+1];
                         letters[j+1] = letters[j];
                         letters[j] = temp;
-                        Console.WriteLine(temp);
                     }
                 }
             }
@@ -28,10 +27,24 @@ namespace AlphabatizeString
             }
             return fin;
         }
+
+        static string AlphaBetter(string str)
+        {
+            string fin = "";
+            foreach (var c in "abcdefghijklmnopqrstuvwxyz")
+            {
+                foreach (var ch in str)
+                {
+                    if (ch == c) fin += c;
+                }
+            }
+            return fin;
+        }
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
             Console.WriteLine(Alphabatize("helloworld"));
+            Console.WriteLine(AlphaBetter("helloworld"));
         }
     }
 }
