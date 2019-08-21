@@ -1,0 +1,23 @@
+﻿@model  MssaMvcApp.Models.Car
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>CarDetail</title>
+</head>
+<body>
+    <h1>@Model.NameOfCar</h1>
+    <h2>@Model.CarModel</h2>
+    <h3>@Model.Color</h3>
+    <h3>@Model.Price</h3>
+    <h3>@Model.Year</h3>
+    <h3>@Model.ToString()</h3>
+    <h3>@Model.GetHashCode()</h3>
+</body>
+</html>

@@ -1,0 +1,34 @@
+﻿@model  IEnumerable<MssaMvcApp.Models.Car>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <h2>Here are the cars in the garage today.</h2>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Make</th>
+            <th>Model</th>
+        </tr>
+
+        @foreach(var vehicle in Model)
+        {
+            <tr>
+                <td>@vehicle.NameOfCar</td>
+                <td>@vehicle.Manufacturer</td>
+                <td>@vehicle.CarModel</td>
+            </tr>
+        }
+
+    </table>
+</body>
+</html>
