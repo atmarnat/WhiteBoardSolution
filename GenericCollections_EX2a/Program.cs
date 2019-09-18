@@ -9,9 +9,9 @@ namespace EX2a_GenericCollections
         static void Main(string[] args)
         {
             //List<T>,
-            var list = new List<object> { 1, "two", 3.00001, true, 0x5 };
+            var list = new List<int> { 1, 2, 3, 4,5 };
             Console.Write("List<T> : ");
-            PrintToConsole<object>(list);
+            PrintToConsole<List<int>>(list);
 
             //LinkedList<T>,
             var linkedList = new LinkedList<object>(new object[] { 1, "two", 3.00001, true, 0x5 });
