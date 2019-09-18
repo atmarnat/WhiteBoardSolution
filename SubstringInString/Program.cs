@@ -9,6 +9,7 @@ namespace SubstringInString
         {
             Console.WriteLine("Hello World!");
             Console.WriteLine(IndexOfSubstring("mothermothhher", "sodjio"));
+            Console.WriteLine(IoS("Mississippi", "is"));
         }
         public static int IndexOfSubstring(string str, string subStr)
         {
@@ -24,5 +25,7 @@ namespace SubstringInString
 
             return -1;
         }
+
+        static int IoS(string str, string subStr) => (new Regex(subStr)).Match(str) != Match.Empty ? Convert.ToInt32((new Regex(subStr)).Match(str).Index.ToString()) : -1;
     }
 }
