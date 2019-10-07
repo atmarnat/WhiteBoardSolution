@@ -10,7 +10,7 @@ namespace DiceOdds
             float total = 0;
             for (int i = 0; i < 13; i++)
             {
-                Console.WriteLine(DiceProb(i));
+                Console.WriteLine($"{i} = {DiceProb(i)}");
                 total += DiceProb(i);
             }
             Console.WriteLine(total);
@@ -52,7 +52,6 @@ namespace DiceOdds
                 case 12:
                     return 1 / t;
                 default:
-                    Console.WriteLine("Not a correct value");
                     return 0;
 
             }
