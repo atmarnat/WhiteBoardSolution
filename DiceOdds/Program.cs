@@ -10,7 +10,7 @@ namespace DiceOdds
             float total = 0;
             for (int i = 0; i < 13; i++)
             {
-                Console.WriteLine($"{i} = {DiceProb(i)}");
+                Console.WriteLine($"{i} = {DiceProb(i)}%");
                 total += DiceProb(i);
             }
             Console.WriteLine(total);
@@ -26,7 +26,7 @@ namespace DiceOdds
               5  6  7  8  9 10 11    
               6  7  8  9 10 11 12     
             */
-            float t = 36f;
+            float t = .36f;
             switch(roll)
             {
                 case 2:

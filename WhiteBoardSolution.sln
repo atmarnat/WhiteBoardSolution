@@ -69,9 +69,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SubstringInString", "Substr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SubstringInStringTests", "SubstringInStringTests\SubstringInStringTests.csproj", "{28AA58ED-DD41-40D9-BA7E-DF70098E0B7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharArraySort", "CharArraySort\CharArraySort.csproj", "{D8AA7089-EB3D-41D9-8D96-62AD155C66A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CharArraySort", "CharArraySort\CharArraySort.csproj", "{D8AA7089-EB3D-41D9-8D96-62AD155C66A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiceOdds", "DiceOdds\DiceOdds.csproj", "{3585E0FE-6F8B-4587-854F-F99C8C6431B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiceOdds", "DiceOdds\DiceOdds.csproj", "{3585E0FE-6F8B-4587-854F-F99C8C6431B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcronymBuilder", "AcronymBuilder\AcronymBuilder.csproj", "{FFBE4297-63EC-4D57-BD80-A21A106D40C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -219,6 +221,10 @@ Global
 		{3585E0FE-6F8B-4587-854F-F99C8C6431B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3585E0FE-6F8B-4587-854F-F99C8C6431B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3585E0FE-6F8B-4587-854F-F99C8C6431B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFBE4297-63EC-4D57-BD80-A21A106D40C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFBE4297-63EC-4D57-BD80-A21A106D40C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFBE4297-63EC-4D57-BD80-A21A106D40C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFBE4297-63EC-4D57-BD80-A21A106D40C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
