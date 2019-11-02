@@ -73,7 +73,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CharArraySort", "CharArrayS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiceOdds", "DiceOdds\DiceOdds.csproj", "{3585E0FE-6F8B-4587-854F-F99C8C6431B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcronymBuilder", "AcronymBuilder\AcronymBuilder.csproj", "{FFBE4297-63EC-4D57-BD80-A21A106D40C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcronymBuilder", "AcronymBuilder\AcronymBuilder.csproj", "{FFBE4297-63EC-4D57-BD80-A21A106D40C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicrosoftWhiteboardQuestions", "MicrosoftWhiteboardQuestions\MicrosoftWhiteboardQuestions.csproj", "{1A46FCFD-94C7-484C-81C9-1EB5353B0786}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -225,6 +227,10 @@ Global
 		{FFBE4297-63EC-4D57-BD80-A21A106D40C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFBE4297-63EC-4D57-BD80-A21A106D40C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFBE4297-63EC-4D57-BD80-A21A106D40C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A46FCFD-94C7-484C-81C9-1EB5353B0786}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A46FCFD-94C7-484C-81C9-1EB5353B0786}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A46FCFD-94C7-484C-81C9-1EB5353B0786}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A46FCFD-94C7-484C-81C9-1EB5353B0786}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
