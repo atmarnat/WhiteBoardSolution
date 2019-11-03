@@ -1,5 +1,5 @@
 ﻿//Some of the whiteboarding questions asked at Microsoft
-
+//Answers might not be 100% complete
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -11,11 +11,21 @@ namespace MicrosoftWhiteboardQuestions
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Clock problem");
             ClockAngle(7, 00);
+
+            Console.WriteLine("\nFront Zeros");
             int[] arr = FrontZeros(new int[]{ 1, 0, 4, 3, 0, 2, 7, 0});
             foreach (var v in arr)
             {
                 Console.Write(v + ", ");
+            }
+
+            Console.WriteLine("\n\nSplitter");
+            List<string> splitter = Splitter("abcdefghijklmnopqrstuvwxyz", new char[] { 'a', 'e', 'i', 'o', 'u' });
+            foreach (var x in splitter)
+            {
+                Console.Write(x + ", ");
             }
         }
 
@@ -33,14 +43,31 @@ namespace MicrosoftWhiteboardQuestions
         }
 
         //Given a string and a char array, split into a list the string based on the characters in the array.
-        public static List<string> Splitter(string str, string[] strArr)
+        public static List<string> Splitter(string str, char[] strArr)
         {
             /*
              do validation here
              */
             List<string> ret = new List<string>();
+            string temp = "";
 
             //stuff goes here
+            for (int i = 0; i < str.Length; i++)
+            {
+                if (strArr.Contains(str[i]))
+                {
+                    ret.Add(temp);
+                    temp = "";
+                }
+                else
+                {
+                    temp += str[i];
+                }
+            }
+            if (temp != "")
+            {
+                ret.Add(temp);
+            }
 
             return ret;
         }
