@@ -52,8 +52,8 @@ namespace MicrosoftWhiteboardQuestions
 
             for (int i = 0; i < str.Length; i++)
             {
-                if(str[i] >= 'a' )
-                AlphabetSet[str[i]]++;
+                if(str[i] >= 'a' && str[i] <= 'z')
+                AlphabetSet[Char.ToLower(str[i])]++;
             }
             return AlphabetSet;
         }
