@@ -27,6 +27,13 @@ namespace MicrosoftWhiteboardQuestions
             {
                 Console.Write(x + ", ");
             }
+
+            Console.WriteLine("\nHashing");
+            Dictionary<char, int> hashing= HashCounter("this is an example");
+            foreach(var h in hashing)
+            {
+                Console.WriteLine(h);
+            }
         }
 
         //Using a hash table, take a string and count up the number of occurances of each character, casing does not matter. If there are no characters, return a zero. Only a-z
@@ -38,7 +45,16 @@ namespace MicrosoftWhiteboardQuestions
             Dictionary<char, int> AlphabetSet= new Dictionary<char, int>();
 
             //stuff goes here
+            for (int i = 0; i < 25; i++)
+            {
+                AlphabetSet.Add((char)((int)'a' + i), 0);
+            }
 
+            for (int i = 0; i < str.Length; i++)
+            {
+                if(str[i] >= 'a' )
+                AlphabetSet[str[i]]++;
+            }
             return AlphabetSet;
         }
 
